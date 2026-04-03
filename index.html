@@ -4,287 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luxury Salon</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #000;
-            color: #fff;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background: #111;
-            border-bottom: 2px solid red;
-        }
-
-        header h1 {
-            color: red;
-            margin: 0;
-        }
-
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: red;
-        }
-
-        section {
-            padding: 80px 50px;
-            text-align: center;
-        }
-
-        .intro {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9');
-            background-size: cover;
-            background-position: center;
-            color: #fff;
-        }
-
-        /* Alternate section backgrounds */
-        section:nth-of-type(even) {
-            background: #111;
-        }
-
-        section:nth-of-type(odd) {
-            background: #000;
-        }
-
-
-
-        .card {
-            background: #111;
-            margin: 20px;
-            padding: 20px;
-            border-radius: 10px;
-            border: 1px solid red;
-            display: inline-block;
-            width: 250px;
-        }
-
-        /* Default button */
-        .btn {
-            background: red;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            margin-top: 10px;
-            font-size: 14px;
-        }
-
-        .btn:hover {
-            background: darkred;
-        }
-
-        /* 1. Bigger Book Now button */
-        .intro .btn {
-            padding: 18px 40px;
-            font-size: 18px;
-        }
-
-        /* 2. Smaller buttons in Services & Offers (if added later) */
-        .services .btn, .offers .btn {
-            padding: 6px 12px;
-            font-size: 12px;
-        }
-
-        footer {
-            background: #111;
-            padding: 20px;
-            text-align: center;
-            border-top: 2px solid red;
-        }
-
-        /* 3. Contact form adjustments */
-        input, textarea {
-            width: 60%;
-            padding: 8px;
-            margin: 8px 0;
-            background: #000;
-            border: 1px solid red;
-            color: #fff;
-        }
-
-        #contact .btn {
-            padding: 15px 35px;
-            font-size: 16px;
-        }
-
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                padding: 15px 20px;
-            }
-
-            nav {
-                margin-top: 10px;
-            }
-
-            nav a {
-                display: inline-block;
-                margin: 8px;
-            }
-
-            section {
-                padding: 50px 20px;
-            }
-
-            .card {
-                width: 90%;
-                display: block;
-                margin: 15px auto;
-            }
-
-            input, textarea {
-                width: 90%;
-            }
-
-            .intro .btn {
-                width: 80%;
-            }
-
-            #contact .btn {
-                width: 70%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 20px;
-            }
-
-            nav a {
-                font-size: 14px;
-            }
-
-            .intro h2 {
-                font-size: 22px;
-            }
-
-            .intro p {
-                font-size: 14px;
-            }
-
-            .btn {
-                font-size: 13px;
-            }
-        }
-
-
-
-        /* Contact Section Styling */
-        .contact-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 30px;
-        }
-
-        .contact-info {
-            background: #111;
-            padding: 20px;
-            border-radius: 10px;
-            border: 1px solid red;
-            text-align: left;
-            width: 250px;
-        }
-
-        .contact-info p {
-            margin: 10px 0;
-            color: #ccc;
-        }
-
-
-
-
-
-
-
-        @media (max-width: 768px) {
-            .contact-container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .contact-info,
-        }
-
-
-
-
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-
-<!-- Header -->
-<header>
-    <h1>Luxury Salon</h1>
-    <nav>
-        <a href="#intro">Home</a>
-        <a href="#experience">Experience</a>
-        <a href="#services">Services</a>
-        <a href="#offers">Offers</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<!-- Introduction -->
-<section id="intro" class="intro">
-    <h2>Welcome to Luxury Salon</h2>
-    <p>Experience premium beauty services with elegance and style.</p>
-    <button class="btn">Book Now</button>
-</section>
-
-<!-- Experience -->
-<section id="experience" class="experience">
-    <h2>Our Experience</h2>
-    <p>Over 10+ years of delivering top-notch salon services with expert stylists.</p>
-</section>
-
-<!-- Services -->
-<section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="card">Hair Styling</div>
-    <div class="card">Makeup</div>
-    <div class="card">Spa & Skincare</div>
-</section>
-
-<!-- Offers -->
-<section id="offers" class="offers">
-    <h2>Special Offers</h2>
-    <div class="card">20% Off on First Visit</div>
-    <div class="card">Combo Packages Available</div>
-</section>
-
-<!-- Contact -->
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p style="color:#ccc; margin-bottom:20px;">Get in touch with us</p>
-    <div class="contact-container">
-        <div class="contact-info">
-            <p><strong>📍 Address:</strong> Your Salon Address</p>
-            <p><strong>📞 Phone:</strong> <a href="tel:+91XXXXXXXXXX" style="color:red; text-decoration:none;">+91 XXXXX XXXXX</a></p>
-            <p><strong>✉️ Email:</strong> <a href="mailto:info@luxurysalon.com" style="color:red; text-decoration:none;">info@luxurysalon.com</a></p>
-            <p><strong>💬 WhatsApp:</strong> <a href="https://wa.me/91XXXXXXXXXX" target="_blank" style="color:red; text-decoration:none;">Chat on WhatsApp</a></p>
+    <header>
+        <div style="display:flex;align-items:center;gap:10px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png" alt="logo" style="width:40px;height:40px;object-fit:contain;">
+            <h1>Luxury Salon</h1>
         </div>
+        <nav>
+            <a href="#intro">Home</a>
+            <a href="#experience">Experience</a>
+            <a href="#services">Services</a>
+            <a href="#offers">Offers</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- INTRO SECTION WITH SLIDESHOW -->
+    <section class="intro-section">
+        <div class="slideshow">
+            <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9')"></div>
+            <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1487412912498-0447578fcca8')"></div>
+            <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1512496015851-a90fb38ba796')"></div>
+        </div>
+        <div class="intro-content">
+            <h2>Luxury Salon</h2>
+            <p>Premium grooming with modern elegance</p>
+            <button class="btn">Book Now</button>
+        </div>
+    </section>
+
+    <!-- SERVICES + OFFERS GRID -->
+    <div class="grid">
+
+        <div class="section-card fade-in" style="background:url('https://images.unsplash.com/photo-1512496015851-a90fb38ba796') center/cover no-repeat;">
+            <h2>Services</h2>
+            <div class="cards">
+                <div class="card">Hair Styling</div>
+                <div class="card">Makeup</div>
+                <div class="card">Skin Care</div>
+            </div>
+        </div>
+
+        <div class="section-card fade-in" style="background:url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f') center/cover no-repeat;">
+            <h2>Offers</h2>
+            <div class="cards">
+                <div class="card">20% Off</div>
+                <div class="card">Combo Deals</div>
+            </div>
+        </div>
+
     </div>
-</section>
 
-<!-- Footer -->
-<footer>
-    <p>© 2026 Luxury Salon | All Rights Reserved</p>
-</footer>
+    <!-- CONTACT SECTION -->
+    <section class="contact-section fade-in" style="background:url('https://images.unsplash.com/photo-1522337660859-02fbefca4702') center/cover no-repeat;">
+        <h2>Contact</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><b>📍 Address:</b> Your Address</p>
+                <p><b>📞 Phone:</b> <a href="tel:+91XXXXXXXXXX" style="color:#ff0033;text-decoration:none;">+91 XXXXX XXXXX</a></p>
+                <p><b>✉️ Email:</b> <a href="mailto:info@luxurysalon.com" style="color:#ff0033;text-decoration:none;">info@luxurysalon.com</a></p>
+                <p><b>💬 WhatsApp:</b> <a href="https://wa.me/91XXXXXXXXXX" target="_blank" style="color:#ff0033;text-decoration:none;">Chat Now</a></p>
+            </div>
+        </div>
+    </section>
 
+    <footer>
+        <p>© 2026 Luxury Salon</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
