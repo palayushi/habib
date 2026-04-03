@@ -63,6 +63,11 @@ nav a:hover::after{width:100%}
     position:relative;
 }
 
+.section-card {
+    width: 100%;
+    box-sizing: border-box;
+}
+
 /* Grid borders */
 .grid{
     display:grid;
@@ -259,7 +264,8 @@ section > *{
     padding:25px;
     border-radius:15px;
     border:1px solid rgba(255,0,0,0.3);
-    width:300px;
+    width: 100%;
+    max-width: 280px;
     text-align:left;
 }
 
