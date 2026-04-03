@@ -1,5 +1,21 @@
 const elements = document.querySelectorAll('.fade-in');
 
+function scrollToSection(id) {
+    const el = document.getElementById(id);
+    if (el) {
+        const header = document.querySelector('header');
+        const headerHeight = header.offsetHeight;
+
+        const elementPosition = el.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - headerHeight - 10;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    }
+}
+
 function revealOnLoadAndScroll() {
     elements.forEach(el => {
         const top = el.getBoundingClientRect().top;
