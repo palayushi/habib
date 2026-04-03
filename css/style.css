@@ -242,9 +242,10 @@ section > *{
     background:rgba(255,255,255,0.05);
     backdrop-filter:blur(10px);
     border:1px solid rgba(255,0,0,0.3);
-    padding:25px;
-    width:260px;
-    border-radius:20px;
+    padding:15px;
+    width:180px;
+    border-radius:15px;
+    font-size:14px;
     transition:0.3s;
 }
 
